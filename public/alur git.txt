@@ -1,0 +1,94 @@
+Project Laravel API
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:samery46/laravel-api.git
+git push -u origin main
+
+1. Membuat API Resources
+
+git branch Create_api_resources
+git checkout Create_api_resources
+
+php artisan storage:link
+php artisan make:resource PostResource
+
+git add .
+git commit -m "Create Api Resources"
+git push origin Create_api_resources
+
+2. Membuat Model & Migration
+
+git checkout main
+git pull origin main
+git checkout -b Create_model_migration
+
+php artisan make:model Post -m
+php artisan migrate
+
+git add .
+git commit -m "Create Model dan Migration"
+git push origin Create_model_migration
+
+3. Eloquent Accessor
+
+git checkout main
+git pull origin main
+git checkout -b Eloquent_accessor
+
+git add .
+git commit -m "Eloquent Accessor"
+git push origin Eloquent_accessor
+
+4. Menampilkan Data dari Database
+git checkout main
+git pull origin main
+git checkout -b View_database
+
+php artisan make:controller Api/PostController
+
+git add .
+git commit -m "View Database"
+git push origin View_database
+
+5. Menambahkan Method Store
+
+git checkout main
+git pull origin main
+git checkout -b Add_method_store
+
+git add .
+git commit -m "Add Method Store"
+git push origin Add_method_store
+
+6. Menampilkan Detail Data
+
+git checkout main
+git pull origin main
+git checkout -b View_detail_data
+
+git add .
+git commit -m "View Detail Data"
+git push origin View_detail_data
+
+7. Menambahkan Method Update Data
+
+git checkout main
+git pull origin main
+git checkout -b Add_update_data
+
+git add .
+git commit -m "Add Update Data"
+git push origin Add_update_data
+
+8. Menambahkan Method Delete Data
+
+git checkout main
+git pull origin main
+git checkout -b Add_delete_data
+
+git add .
+git commit -m "Add Delete Data"
+git push origin Add_delete_data
